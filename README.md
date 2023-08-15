@@ -1,37 +1,38 @@
-# chromium_third_party_wuffs
+# Wuffs Mirror (release/c)
 
-#### 介绍
-第三方软件wuffs
+This repository mirrors a subset of the
+[Wuffs](https://github.com/google/wuffs) (Wrangling Untrusted File Formats
+Safely) repository.
 
-#### 软件架构
-软件架构说明
+Wuffs is both a programming language (Wuffs-the-language) and a standard
+library (Wuffs-the-library) written in that language. The Wuffs toolchain
+converts from Wuffs-the-language to C and Wuffs-the-library is available as a
+single C file - a [header file
+library](https://github.com/nothings/stb/blob/master/docs/stb_howto.txt).
 
+People who just want to *use* Wuffs-the-library in its C form (instead of
+*modifying* its Wuffs form or otherwise needing Wuffs-the-language tools) only
+need that one C file.
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+This repository's [`release/c`](./release/c) directory contains that C file (at
+various versions). It mirrors the `release/c` directory of the [original Wuffs
+repository](https://github.com/google/wuffs) (except for the "unsupported
+snapshot" version). By excluding everything else, this repository is much
+smaller and changes much less frequently.
 
 
-#### 特技
+## Updates
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+This repository's `release/c` directory is manually updated by the
+`script/sync.sh` shell script, which also logs to [`sync.txt`](./sync.txt).
+
+
+## Disclaimer
+
+This is not an official Google product, it is just code that happens to be
+owned by Google.
+
+
+---
+
+Updated on March 2021.
