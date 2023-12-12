@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "wuffs",                   
+        "License": "Apache-2.0",         
+        "License File": "LICENSE",    
+        "Version Number": "ebbecaa2fb439eff0aeedafadb4c2a984446dee8",
+        "Owner": "jinchanggang@huawei.com",
+        "Upstream URL": "https://skia.googlesource.com/external/github.com/google/wuffs-mirror-release-c.git@ebbecaa2fb439eff0aeedafadb4c2a984446dee8",   
+        "Description": "第三方软件wuffs"        
+    }
+]
